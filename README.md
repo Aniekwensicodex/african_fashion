@@ -1,73 +1,126 @@
-# Welcome to your Lovable project
+# ÀṢÀ Lagos - Luxury African Fashion 🇳🇬
 
-## Project info
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+**Where Heritage Meets Elegance**  
+Handcrafted luxury fashion celebrating African culture, designed for the modern world. Based in Lagos, Nigeria. Discover vibrant Ankara dresses, embroidered suits, artisan accessories – all meticulously crafted by skilled Nigerian artisans.
 
-## How can I edit this code?
+Live Demo: [View Site](http://localhost:5173) (run `npm run dev`)
 
-There are several ways of editing your application.
+## ✨ Features
 
-**Use Lovable**
+- **Elegant Hero Section**: Fullscreen banner with brand story and CTAs (Shop Collection, Our Story).
+- **Featured Products Grid**: Curated selection with smooth animations (Framer Motion).
+- **Products Catalog**: Filter by category (Women's Wear, Men's Wear, Accessories), responsive grid, detailed cards.
+- **Responsive Navigation**: Fixed navbar with mobile hamburger menu, active states, WhatsApp order button.
+- **Modern UI/UX**: shadcn/ui components, TailwindCSS, dark mode-ready, gold gradient accents.
+- **Performance**: Vite fast builds, React Router, Tanstack Query for data.
+- **WhatsApp Integration**: Floating button + nav CTAs for quick customer chats (Nigeria-focused).
+- **SEO-Friendly**: Meta tags, alt texts, semantic HTML.
+- **Mobile-First**: Fully responsive across devices.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## 🛠️ Quick Start
 
-Changes made via Lovable will be committed automatically to this repo.
+```bash
+# Clone the repo
+git clone <your-repo-url> african-fashion
+cd african-fashion
 
-**Use your preferred IDE**
+# Install dependencies (npm or bun)
+npm install
+# or
+bun install
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server (localhost:5173)
 npm run dev
+
+# Build for production
+npm run build
+
+# Run tests
+npm run test
+
+# Preview production build
+npm run preview
 ```
 
-**Edit a file directly in GitHub**
+Open [http://localhost:5173](http://localhost:5173) and explore!
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📁 Project Structure
 
-**Use GitHub Codespaces**
+```
+african_fashion/
+├── public/                 # Static assets (favicon, robots.txt)
+├── src/
+│   ├── assets/             # Images (hero, products)
+│   ├── components/         # Navbar, Footer, ProductCard, shadcn/ui/
+│   ├── hooks/              # Custom hooks (mobile, toast)
+│   ├── lib/                # utils.ts, products.ts (sample data)
+│   ├── pages/              # Index.tsx (home), Products.tsx, About.tsx, etc.
+│   ├── App.tsx             # Router + Providers
+│   └── main.tsx            # Entry point
+├── package.json            # Scripts & deps
+├── tailwind.config.ts      # Custom themes (gold gradients)
+├── vite.config.ts          # Vite config
+└── README.md               # You're reading it!
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🔧 Tech Stack
 
-## What technologies are used for this project?
+| Category | Technologies |
+|----------|--------------|
+| Framework | Vite, React 18, TypeScript 5.8 |
+| Styling | TailwindCSS 3.4, shadcn/ui, Framer Motion (animations) |
+| Routing/State | React Router, Tanstack Query |
+| UI/Icons | Lucide React, Sonner (toasts) |
+| Utils | class-variance-authority, clsx, Zod |
+| Testing | Vitest, Testing Library |
+| Other | React Hook Form, Embla Carousel (ready for sliders) |
 
-This project is built with:
+## 🚀 Deployment
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+1. Build: `npm run build` (outputs to `dist/`).
+2. Deploy static files to:
+   - [Vercel](https://vercel.com) (auto-deploys from GitHub)
+   - [Netlify](https://netlify.com)
+   - [GitHub Pages](https://pages.github.com)
+   - Any static host.
 
-## How can I deploy this project?
+For custom domains or e-commerce (add cart/checkout): Integrate Stripe/Paystack for ₦ payments.
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+**Lovable.dev users**: Publish via Share → Publish in your project dashboard.
 
-## Can I connect a custom domain to my Lovable project?
+## 📱 Product Catalog (Sample)
 
-Yes, you can!
+| Name | Category | Price | Description |
+|------|----------|-------|-------------|
+| Ankara Blossom Wrap Dress | Women's Wear | ₦45,000 | Vibrant print with butterfly sleeves |
+| Royal Heritage Bead Set | Accessories | ₦28,000 | Yoruba-inspired necklace + earrings |
+| Lagos Elite Suit | Men's Wear | ₦85,000 | Tailored with embroidered lapels |
+| Artisan Raffia Tote | Accessories | ₦32,000 | Hand-woven with leather trim |
+| Silk Ìrísí Kaftan | Women's Wear | ₦62,000 | Flowing jewel tones |
+| Embroidered Fila & Shoe Set | Men's Accessories | ₦38,000 | For celebrations |
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Data in `src/lib/products.ts` – extend for real backend/API.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## 🤝 Contributing
+
+1. Fork & clone.
+2. Create feature branch: `git checkout -b feature/amazing`.
+3. Commit: `git commit -m "feat: add amazing"`.
+4. Push & PR.
+
+Questions? [WhatsApp us](https://wa.me/2348028277607) or open an issue.
+
+## 📄 License
+
+MIT License – see [LICENSE](LICENSE) (add one if needed).
+
+## 🙏 Acknowledgments
+
+- Built with [Vite](https://vitejs.dev/), [shadcn/ui](https://ui.shadcn.com/)
+- Assets: Custom African fashion photography
+- Inspired by Nigerian artisan craftsmanship
+
+---
+
+⭐ Star on GitHub if you love African fashion! #AfricanFashion #LagosStyle #HeritageElegance
