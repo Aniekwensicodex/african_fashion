@@ -12,7 +12,7 @@ const About = () => (
         <p className="text-gold font-body text-xs tracking-[0.3em] uppercase mb-3">
           Our Story
         </p>
-        <h1 className="font-display text-4xl md:text-5xl font-bold">About ÀṢÀ Lagos</h1>
+        <h1 className="font-display text-4xl md:text-5xl font-bold text-white">About ÀṢÀ Lagos</h1>
       </motion.div>
 
       <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
@@ -30,7 +30,7 @@ const About = () => (
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="font-display text-2xl md:text-3xl font-bold mb-6 line-decoration">
+          <h2 className="font-display text-2xl md:text-3xl font-bold mb-6 line-decoration text-white">
             Heritage Reimagined
           </h2>
           <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
@@ -60,9 +60,9 @@ const About = () => (
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: i * 0.15 }}
             viewport={{ once: true }}
-            className="bg-secondary p-8 rounded-sm"
+            className="bg-2F2B24 p-8 rounded-sm"
           >
-            <h3 className="font-display text-xl font-semibold mb-3">{value.title}</h3>
+            <h3 className="font-display text-xl font-semibold mb-3 text-white">{value.title}</h3>
             <p className="text-muted-foreground text-sm font-body leading-relaxed">{value.desc}</p>
           </motion.div>
         ))}

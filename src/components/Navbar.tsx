@@ -19,7 +19,7 @@ const Navbar = () => {
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         <Link to="/" className="font-display text-2xl md:text-3xl font-bold tracking-wider">
           <span className="text-gold-gradient">ÀṢÀ</span>{" "}
-          <span className="text-foreground">LAGOS</span>
+          <span className="text-white">LAGOS</span>
         </Link>
 
         {/* Desktop Nav */}

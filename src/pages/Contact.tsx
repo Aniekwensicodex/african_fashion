@@ -20,7 +20,7 @@ const Contact = () => {
           <p className="text-gold font-body text-xs tracking-[0.3em] uppercase mb-3">
             Get In Touch
           </p>
-          <h1 className="font-display text-4xl md:text-5xl font-bold">Contact Us</h1>
+          <h1 className="font-display text-4xl md:text-5xl font-bold text-white">Contact Us</h1>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12">
@@ -31,7 +31,7 @@ const Contact = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="font-display text-2xl font-bold mb-6 line-decoration">
+            <h2 className="font-display text-2xl font-bold mb-6 line-decoration text-white">
               Visit Our Boutique
             </h2>
             <div className="space-y-6 mb-8">
@@ -45,7 +45,7 @@ const Contact = () => {
                   <item.icon className="text-gold mt-1 flex-shrink-0" size={20} />
                   <div>
                     <p className="font-body text-xs tracking-widest uppercase text-muted-foreground mb-1">{item.label}</p>
-                    <p className="font-body text-foreground">{item.value}</p>
+                    <p className="font-body text-white">{item.value}</p>
                   </div>
                 </div>
               ))}
@@ -67,7 +67,7 @@ const Contact = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <form onSubmit={handleSubmit} className="bg-secondary p-8 rounded-sm space-y-6">
+            <form onSubmit={handleSubmit} className="bg-seco p-8 rounded-sm space-y-6">
               <div>
                 <label className="font-body text-xs tracking-widest uppercase text-muted-foreground block mb-2">Full Name</label>
                 <input
